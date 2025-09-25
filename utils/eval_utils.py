@@ -29,7 +29,7 @@ def get_auc_precision_recall(
     if not set(np.unique(y_true)).issubset({0, 1}):
         raise ValueError("y_true must be binary (0/1)")
 
-    precision, recall, _ = precision_recall_curve(y_true=y_true, probas_pred=y_pred_prob)
+    precision, recall, _ = precision_recall_curve(y_true, y_pred_prob)
     area_under_PRcurve = float(auc(x=recall, y=precision))
 
     return area_under_PRcurve
@@ -148,7 +148,7 @@ def precision_recall_thresholds_curve(
     if not set(np.unique(y_true)).issubset({0, 1}):
         raise ValueError("y_true must be binary (0/1)")
     
-    precision, recall, thresholds = precision_recall_curve(y_true=y_true, probas_pred=y_pred_prob)
+    precision, recall, thresholds = precision_recall_curve(y_true, y_pred_prob)
 
     plt.figure(figsize=(8, 6))
     plt.plot(thresholds, precision[:-1], label='Precision', marker='.')
@@ -195,7 +195,7 @@ def plot_pr_curve(
     if not set(np.unique(y_true)).issubset({0, 1}):
         raise ValueError("y_true must be binary (0/1)")
     
-    precision, recall, _ = precision_recall_curve(y_true=y_true, probas_pred=y_pred_prob)
+    precision, recall, _ = precision_recall_curve(y_true, y_pred_prob)
 
     plt.figure(figsize=(8, 6))
     plt.plot(recall, precision, color='darkorange', lw=2, label=f'Precision-Recall curve')
@@ -219,7 +219,7 @@ def get_best_threshold(
         ) -> Tuple[float, np.ndarray]:
     """
     """
-    precision, recall, thresholds = precision_recall_curve(y_true=y_true, probas_pred=y_pred_prob)
+    precision, recall, thresholds = precision_recall_curve(y_true, y_pred_prob)
     f1_scores = ((2 * precision * recall) / (precision + recall))
 
     f1_scores = f1_scores[:-1]   
