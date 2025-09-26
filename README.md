@@ -45,7 +45,7 @@ To set up the project locally, follow these steps:
    pip install -r requirements.txt
    ```
 
-   *(Note: A `requirements.txt` file is assumed. If not present, it should be created based on the imported libraries in `train.py`, `utils/data_utils.py`, `utils/eval_utils.py`, and `utils/model_utils.py`)*
+
 
 ## Usage
 
@@ -96,6 +96,7 @@ Fraud-Detection-Project/
 │       ├── model_comparison-(validation dataset).png # Heatmap comparing model performance
 │       └── trained_models.pkl # Serialized trained models
 ├── my_data_profile.html      # Data profiling report
+├── requirements.txt          # Python dependencies and versions
 ├── train.py                  # Main script for training and evaluating models
 └── utils/
     ├── __pycache__/
@@ -108,6 +109,12 @@ Fraud-Detection-Project/
 
 Contributions are welcome! Please feel free to open issues or submit pull requests.
 
+## License
 
+This project is licensed under the MIT License. See the `LICENSE` file for details. (Note: A `LICENSE` file is assumed. If not present, consider adding one.)
+
+## Contact
+
+For any questions or inquiries, please contact [Your Name/Email/GitHub Profile].
 
 
