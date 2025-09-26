@@ -71,7 +71,7 @@ During training, models are evaluated on both training and validation datasets. 
 
 The project evaluates several machine learning models for fraud detection. The performance is summarized in the following comparison chart, focusing on key metrics on the validation dataset:
 
-![Model Comparison - Validation Dataset](models/2025_09_25_18_09/model_comparison-(validation dataset).png)
+![Model Comparison - Validation Dataset](https://github.com/gamal1osama/Fraud-Detection-Project/blob/main/models/2025_09_25_18_09/model_comparison-(validation%20dataset).png)
 
 As observed from the validation dataset, the **Random Forest** model achieved the highest F1-score macro average of **93%**, demonstrating its superior ability to balance precision and recall across both positive (fraud) and negative (non-fraud) classes. This makes Random Forest the most effective model for this fraud detection task among those evaluated.
 
