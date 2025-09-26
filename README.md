@@ -109,12 +109,3 @@ Fraud-Detection-Project/
 
 Contributions are welcome! Please feel free to open issues or submit pull requests.
 
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details. (Note: A `LICENSE` file is assumed. If not present, consider adding one.)
-
-## Contact
-
-For any questions or inquiries, please contact [Your Name/Email/GitHub Profile].
-
-
